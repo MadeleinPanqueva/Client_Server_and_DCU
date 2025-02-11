@@ -847,7 +847,6 @@
         navLinks.classList.toggle("active");
       });
 
-      // Cerrar menú al hacer clic en un enlace
       document.querySelectorAll(".nav-link").forEach((link) => {
         link.addEventListener("click", () => {
           if (window.innerWidth <= 768) {
@@ -856,7 +855,6 @@
         });
       });
 
-      // Cerrar menú al hacer clic fuera
       document.addEventListener("click", (e) => {
         if (
           window.innerWidth <= 768 &&
@@ -867,7 +865,6 @@
         }
       });
 
-      // Ajustar menú al redimensionar
       window.addEventListener("resize", () => {
         if (window.innerWidth > 768) {
           navLinks.classList.remove("active");
